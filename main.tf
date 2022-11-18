@@ -19,7 +19,7 @@ resource "azurerm_resource_group" "tcloud" {
   location = var.location
 }
 
-resource "azurerm_virtual_network" "synapse_network" {
+resource "azurerm_virtual_network" "tcloud" {
   name                = var.vnet_name
   address_space       = [var.vnet_address_space]
   location            = azurerm_resource_group.tcloud.location
