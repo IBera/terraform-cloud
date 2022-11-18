@@ -15,7 +15,7 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "tcloud" {
-  name     = "${var.rg_name-var.ENV}"
+  name     = "${var.rg_name}-${var.ENV}"
   location = var.location
 }
 
