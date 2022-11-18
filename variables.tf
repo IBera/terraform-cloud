@@ -1,3 +1,8 @@
+variable "ENV" {
+  type        = string
+  description = "(Required) Environment."
+}
+
 variable "rg_name" {
   type        = string
   description = "(Required) Application resource group name."
